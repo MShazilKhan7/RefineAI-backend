@@ -7,7 +7,6 @@ const authRoutes = require("./routes/auth.routes");
 const jobRoutes = require("./routes/job.routes.js");
 const resumeRoutes = require("./routes/resume.routes.js");
 const aiRoutes = require("./routes/ai.routes.js");
-const interviewRoutes = require("./routes/interview.routes.js");
 const protect = require("../src/middlewares/auth.middleware.js");
 const app = express();
 
