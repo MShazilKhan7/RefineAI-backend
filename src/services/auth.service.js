@@ -28,14 +28,14 @@ const signup = async (userData) => {
   });
 
   // Send welcome email
-  await emailService.sendWelcomeEmail(user.email, user.name);
+  // await emailService.sendWelcomeEmail(user.email, user.name);
 
   // Generate token
-  const token = generateToken(user.id);
+  const accessToken = generateToken(user.id);
 
   return {
     user,
-    accessToken: token,
+    accessToken: accessToken,
     refreshToken: '',
   };
 };
@@ -60,7 +60,7 @@ const login = async (email, password) => {
   const token = generateToken(user.id);
 
   return {
-    token,
+    accessToken: token,
     refreshToken: '',
     user: {
       id: user.id,
