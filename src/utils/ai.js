@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const AI_BASE_URL = "http://127.0.0.1:8000/ai";
+const AI_BASE_URL = process.env.AI_BASE_URL
 
 // Suggestions API
 export const generateSuggestionsAI = async (
