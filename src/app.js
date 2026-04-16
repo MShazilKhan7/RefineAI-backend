@@ -37,7 +37,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobs", jobRoutes);
 app.use("/api/resume", resumeRoutes);
 app.use("/api/ai", aiRoutes);
-app.use("/api/interview", interviewRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
